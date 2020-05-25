@@ -3,7 +3,7 @@
   "name": "New Tab Redirect",
   "short_name": "NTR!",
   "description": "Allows a user to provide the URL of the page that loads in a new tab.",
-  "version": "3.1.5-yui",
+  "version": "3.1.5.1",
   "background": {
     "scripts": [
       "js/background.js"
@@ -30,6 +30,5 @@
     "19": "images/icon19.png"
   },
   "incognito": "split",
-  "minimum_chrome_version": "22",
-  "content_security_policy": "script-src 'self' https://code.jquery.com; object-src 'self'"
+  "minimum_chrome_version": "22
 }
