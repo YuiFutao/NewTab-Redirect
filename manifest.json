@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "New Tab Redirect",
-  "short_name": "NTR!",
-  "description": "Allows a user to provide the URL of the page that loads in a new tab.",
-  "version": "3.1.5.1",
+  "name": "colors-of-the-day",
+  "short_name": "CotD",
+  "description": "曜日を連想させる写真を新しいタブに表示します",
+  "version": "1.0.0",
   "background": {
     "scripts": [
       "js/background.js"
@@ -30,5 +30,5 @@
     "19": "images/icon19.png"
   },
   "incognito": "split",
-  "minimum_chrome_version": "22
+  "minimum_chrome_version": "22"
 }
