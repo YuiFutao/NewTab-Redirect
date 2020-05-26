@@ -3,26 +3,13 @@
   "name": "colors-of-the-day",
   "short_name": "CotD",
   "description": "曜日を連想させる写真を新しいタブに表示します",
-  "version": "1.0.0",
-  "background": {
-    "scripts": [
-      "js/background.js"
-    ],
-    "persistent": false
-  },
-  "options_page": "options.html",
+  "version": "1.0.1",
   "chrome_url_overrides": {
     "newtab": "main.html"
   },
-  "permissions": [
-    "storage",
-    "chrome://favicon/"
-  ],
+  "permissions": [],
   "optional_permissions": [
-    "tabs",
-    "topSites",
-    "management",
-    "bookmarks"
+    "tabs"
   ],
   "icons": {
     "200": "images/icon200.png",
