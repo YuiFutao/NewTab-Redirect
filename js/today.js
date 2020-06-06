@@ -58,6 +58,6 @@ window.onload = function () {
  * @param 背景に適用したい画像
 */
 function changeBG(IMG) {
-  document.body.style.background = "url(" + IMG + ") no-repeat center center";
+  document.body.style.background = "url(" + IMG + ") no-repeat center center fixed";
   document.body.style.backgroundSize = "cover"
 }

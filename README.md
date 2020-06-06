@@ -1,4 +1,4 @@
-# colors-of-the-day
+# new tab colors-of-the-day
 
 ## Google Chrome Extension
 ### 概要
@@ -11,9 +11,17 @@
 ## Legal
 released under the [MIT license](http://bit.ly/mit-license). 
 
-
 ## Thanks
 - photo: https://pixabay.com/ja/photos
 - icon: https://illustimage.com/?id=5681
 - extension: https://github.com/jimschubert/NewTab-Redirect
 
+## Donation
+- https://streamlabs.com/twintail_vtuber/tip
+- https://www.patreon.com/user?u=36282539
+
+## TODO
+- 上下中央揃え
+- 消し方をオプションとかに書く
+- Donationリンクを置く
+- 写真のバリエーションを増やす

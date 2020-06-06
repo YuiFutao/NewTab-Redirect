@@ -6,18 +6,39 @@ body{
   font-size: 30px;
   height: 1100px;
   /* 背景はJSで上書きするので、ここはただの仮設定 */
-  background: url(../img/99.jpg) no-repeat center center;
+  background: url(../img/61.jpg) no-repeat center center;
   background-size: cover;
+
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+
+  /* 背景画像が読み込まれる前に表示される背景のカラー */
+  background-color: #464646;
 }
 
 
 /* 文字入れてる四角い箱 */
 .container{
-  margin: 500px auto;
+  /* margin: 500px auto; */
   padding-top: 12px;
   width: 300px;
   border: white solid 4px;
   background-color: rgba(10,10,10,0.2);
+
+  /* 常にウィンドウの中央に表示する */
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
 }
 
 
