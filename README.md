@@ -21,7 +21,6 @@ released under the [MIT license](http://bit.ly/mit-license).
 - https://www.patreon.com/user?u=36282539
 
 ## TODO
-- 上下中央揃え
-- 消し方をオプションとかに書く
-- Donationリンクを置く
 - 写真のバリエーションを増やす
+- Donationリンクを置く
+- 消し方をオプションとかに書く
