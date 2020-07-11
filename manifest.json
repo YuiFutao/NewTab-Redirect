@@ -3,7 +3,7 @@
   "name": "colors-of-the-day",
   "short_name": "CotD",
   "description": "曜日を連想させる写真を新しいタブに表示します",
-  "version": "1.0.1",
+  "version": "1.1",
   "chrome_url_overrides": {
     "newtab": "main.html"
   },

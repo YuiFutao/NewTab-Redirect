@@ -1,6 +1,4 @@
 
-
-
 /**
  * 時刻表示を更新する関数
 */
@@ -12,7 +10,7 @@ window.onload = function () {
   //1秒ごとに表示更新
   timerid = setInterval(updateTime, 1000);
 
-  // ここに読み込み完了時に実行してほしい内容を書く。
+  //ここにjs読み込み完了時に実行する内容を書く
   function updateTime() {
     var now = new Date();
     document.getElementById('date').innerHTML = dateToStr24HPad0(now, 'MM/DD');
@@ -21,16 +19,20 @@ window.onload = function () {
     var wDay = now.getDay()
     document.getElementById('week').innerHTML = dayOfWeekStr[wDay];
 
+    //画像のランダム化
+    //日付の下一桁を今日の数字とする
+    var todaysNumber = '0' + now.getDate() % 10;
+    console.log(todaysNumber);
+
     //曜日毎に背景画像を変える
-    //console.log('wDay=' + wDay)
     switch (wDay) {
-      case 0: changeBG("img/00.jpg"); break;
-      case 1: changeBG("img/10.jpg"); break;
-      case 2: changeBG("img/20.jpg"); break;
-      case 3: changeBG("img/30.jpg"); break;
-      case 4: changeBG("img/40.jpg"); break;
-      case 5: changeBG("img/50.jpg"); break;
-      case 6: changeBG("img/60.jpg"); break;
+      case 0: changeBG("img/Sunday" + todaysNumber + ".jpg"); break;
+      case 1: changeBG("img/Monday" + todaysNumber + ".jpg"); break;
+      case 2: changeBG("img/Tuesday" + todaysNumber + ".jpg"); break;
+      case 3: changeBG("img/Wednesday" + todaysNumber + ".jpg"); break;
+      case 4: changeBG("img/Thursday" + todaysNumber + ".jpg"); break;
+      case 5: changeBG("img/Friday" + todaysNumber + ".jpg"); break;
+      case 6: changeBG("img/Saturday" + todaysNumber + ".jpg"); break;
       default: console.log("invalid wDay.");
     }
   }
@@ -56,7 +58,7 @@ function dateToStr24HPad0(date, format) {
 }
 
 /**
- * 背景を変える（CSSのbackgroundを上書きする）
+ * CSSのbackground(背景)を上書きする
  * @param {String} IMG 背景に適用したい画像のPath
 */
 function changeBG(IMG) {
